@@ -2,6 +2,7 @@ package com.example.quizapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -45,8 +46,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //all questions have been answered
         if(questionNumber==questions.size()-1)
         {
-            questionNumView.setText(Integer.toString(correctAnswers));
-            return;
+            //launch result activity
+            Intent intent = new Intent(this,ResultActivity.class);
+            startActivity(intent);
+            /*questionNumView.setText(Integer.toString(correctAnswers));
+            return;*/
         }
 
         //last question is reached
