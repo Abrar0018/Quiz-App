@@ -48,9 +48,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             //launch result activity
             Intent intent = new Intent(this,ResultActivity.class);
+            intent.putExtra("IncorrectAnswers",Integer.toString(incorrectAnswers));
+            intent.putExtra("CorrectAnswers",Integer.toString(correctAnswers));
             startActivity(intent);
-            /*questionNumView.setText(Integer.toString(correctAnswers));
-            return;*/
+            return;
         }
 
         //last question is reached
