@@ -15,6 +15,7 @@
         android:text="Welcome to Quiz App"/>
 
     <TextView
+        android:id="@+id/questionNum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -26,8 +27,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
         android:text="Question Content"
-        android:textAlignment="center"
         android:padding="20dp"/>
 
     <RadioGroup
